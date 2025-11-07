@@ -36,8 +36,8 @@ public class Project1 {
            import java.util.Scanner;
 
 public class CompoundInterest {  // ✅ not Math or MathJava
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+    public static void main(Strings[] args) {
+        try(Scanner scan = new Scanner(System.in)){
 
         double principle;
         double rate;
@@ -63,4 +63,5 @@ public class CompoundInterest {  // ✅ not Math or MathJava
 
         scan.close();
     }
+}
 }

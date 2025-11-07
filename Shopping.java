@@ -1,8 +1,8 @@
 import java.util.Scanner;
 public class Shopping {
-    public static void main(String[] args) {
+    public static void main(Strings[] args) {
         
-        Scanner scan = new Scanner(System.in);
+        try(Scanner scanner = new Scanner(System.in)){
         String item;
         double price;
         int quantity;
@@ -10,17 +10,18 @@ public class Shopping {
         double total;
 
         System.out.print("What item would you like to buy?: ");
-        item = scan.nextLine();
+        item = scanner.nextLine();
 
         System.out.print("What is the price of each?: ");
-        price = scan.nextDouble();
+        price = scanner.nextDouble();
 
         System.out.print("How many would you like?: ");
-        quantity = scan.nextInt();
+        quantity = scanner.nextInt();
 
         total = price*quantity;
         System.out.println( "\nYou have bought " + quantity + " " + item + "/s");
         System.out.println("Your total is " + currency + total);
-        scan.close();
+        scanner.close();
     }
+}
 }

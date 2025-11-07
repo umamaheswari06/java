@@ -42,14 +42,15 @@ public class UserInput {
 
 import java.util.Scanner;
 public class UserInput {
-    public static void main(String[] args) {
-         Scanner scan = new Scanner(System.in);
+    public static void main(Strings[] args) {
+         try(Scanner scanner = new Scanner(System.in)){
          System.out.print("Enter the length : ");
-         double length = scan.nextDouble();
+         double length = scanner.nextDouble();
          System.out.print("Enter the Breadth : ");
-         double breadth = scan.nextDouble();
+         double breadth = scanner.nextDouble();
          double area = length * breadth;
          System.out.println("the area of the rectangle is : "  + area + "cm^2");
-         scan.close();
+         scanner.close();
     }
+}
 }

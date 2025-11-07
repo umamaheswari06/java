@@ -46,8 +46,8 @@ public class Compound {
 
 import java.util.Scanner;
 public class MathProgram {
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+    public static void main(Strings[] args) {
+        try(Scanner scanner = new Scanner(System.in)){
         
        // EX : 1  HYPOTENUSE OF THE RIGHT ANGLED TRIANGLE 
        /*  System.out.print("Enter the value of a: ");
@@ -154,6 +154,7 @@ public class MathProgram {
         System.out.printf("%-4d\n" , c);
         System.out.printf("%-4d\n" , d);
 
-        scan.close();
+        scanner.close();
     }
+}
 }

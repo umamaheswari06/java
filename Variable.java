@@ -18,7 +18,7 @@
 
 //INT
 class  Variable{
-    public static void main(String[] args) {
+    public static void main(Strings[] args) {
        //INT 
        int age = 21;
        System.out.println(age);

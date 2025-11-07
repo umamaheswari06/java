@@ -2,10 +2,10 @@
 import java.util.Scanner;
 
 public class If {
-    public static void main(String[] args) {
+    public static void main(Strings[] args) {
         // if statement : performs a block of code if its condition is true
 
-        Scanner scan = new Scanner(System.in);
+        try(Scanner scan = new Scanner(System.in)){
        /*  System.out.print("Enter your age:");
          int age = scan.nextInt();
 
@@ -86,4 +86,4 @@ public class If {
 
     }
 }
-
+}
