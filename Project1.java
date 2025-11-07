@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Madlibs {
+public class Project1 {
     public static  void  main(String args[]){
         Scanner scan = new Scanner(System.in);
 
